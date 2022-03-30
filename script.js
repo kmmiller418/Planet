@@ -1,15 +1,9 @@
 const list = document.querySelector('ul');
-
-document.querySelector('.todo').addEventListener('keypress', (event) => {
-    if (event.key == "Enter"){
-        console.log('filler');
-    }
-})
+const input = document.querySelector('input');
 
 function add() {
-    const newItem = document.createElement('input');
-    newItem.type = Text;
-    newItem.class = "todo";
-    newItem.placeholder = "What are we going to do today?";
+    const newItem = document.createElement('li');
+    newItem.class = "todo-item";
+    newItem.innerText = `${input.value}`;
     list.appendChild(newItem);
 }
