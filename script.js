@@ -8,6 +8,7 @@ button.addEventListener("click", () => {
   newItem.className = "todo-item";
   if (input.value !== "") {
     list.append(newItem);
+    input.value="";
   } else {
     alert("can't add an empty task!");
   }
