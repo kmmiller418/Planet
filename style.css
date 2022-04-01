@@ -28,7 +28,7 @@ header p {
     margin-bottom: 3em;
 }
 
-main {
+.input-container, .todo-list-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -37,19 +37,16 @@ main {
     background-color: white;
     width: 70%;
 }
-
-main input {
+.input-container input {
     width: 95%;
     border: none;
     padding-left: 2em;
     margin-left: 2em;
-    margin-right: 2em;
 }
-
-main button {
+.input-container button {
     justify-self: flex-end;
-    height: 3em;
-    width: 6em;
+    height: 2em;
+    width: 3em;
     border: none;
     border-radius: 8px;
     color: navy;
@@ -57,10 +54,37 @@ main button {
     background-color: white;
     font-weight: bold;
 }
-
-main button:hover {
+.input-container button:hover {
+    cursor: pointer;
     background-color: navy;
     color: white;
+}
+
+.todo-list-container {
+    margin-top: 3em;
+    color: black;
+    padding-left: 2em;
+}
+
+.todo-list-container p {
+    font-weight: bold;
+}
+
+.todo-list{
+    background-color: white;
+    width: 95%;
+    color: black;
+    list-style-image: url('stars.svg');
+}
+
+.todo-list li {
+    padding: .5em;
+    text-align: center;
+}
+
+.todo-list li:hover {
+    cursor: pointer;
+    background-color: rgba(27, 66, 181, 0.584);
 }
 
 footer {

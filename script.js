@@ -1,20 +1,20 @@
-const button = document.querySelector('button');
-const list = document.querySelector('.todo-list');
+const button = document.querySelector("button");
+const list = document.querySelector(".todo-list");
 
-const newItem = document.createElement('li');
-newItemStuff = document.querySelector('input').value;
-console.log(newItemStuff);
-newItem.innerHTML = newItemStuff;
+button.addEventListener("click", () => {
+  const newItem = document.createElement("li");
+  const input = document.querySelector("input");
+  newItem.innerHTML = `${input.value}`;
+  newItem.className = "todo-item";
+  if (input.value !== "") {
+    list.append(newItem);
+  } else {
+    alert("can't add an empty task!");
+  }
+});
 
-list.append(newItem);
-
-button.addEventListener('click', function() {
-    const input = document.querySelector('input');
-    newItem.innerHTML = `${input.value}`;
-    if (input.value !== ''){
-        const newItem = document.createElement('li');
-        list.append(newItem);
-    } else {
-        alert("can't add an empty task!")
-    }
-})
+list.addEventListener("click", (e) => {
+  let listItem = e.target;
+  listItem.style.textDecoration = "line-through";
+  setTimeout(() => (listItem.remove()), 1000);
+});
