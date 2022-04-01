@@ -1,3 +1,7 @@
+.animate__animated.animate__rotateInUpRight {
+    --animate-duration: 2s;
+  }
+
 body {
     display: flex;
     flex-wrap: wrap;
@@ -23,8 +27,19 @@ header h1 {
     margin: 1em 1em .5em 1em;
 }
 
+.dot-container{
+    display: inline-block;
+}
+
+.dot {
+    height: 25px;
+    width: 25px;
+    background-color: darkgrey;
+    border-radius: 50%;
+    display: inline-block;
+  }
+
 header p {
-    margin: 0em;
     margin-bottom: 3em;
 }
 

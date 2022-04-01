@@ -6,19 +6,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
     <title>Planet</title>
   </head>
   <body>
     <header>
       <h1>Planet</h1>
+      <div class="dot-container">
+        <div class="dot animate__animated animate__rotateInUpRight"></div>
+        <div class="dot animate__animated animate__rotateIn"></div>
+        <div class="dot animate__animated animate__rotateInDownRight"></div>
+        <div class="dot animate__animated animate__rotateIn"></div>
+      </div>
       <p><em>Don't</em> get lost in the void, make a to-do list.</p>
     </header>
-
+    
     <div class="input-container">
       <input type="text" placeholder="Where are we off to do today?" value=""/>
       <button><i class="bi bi-clipboard2-plus-fill" role="button" aria-label="add-task-clipboard"></i></button>
     </div>
-
+    
     <div class="todo-list-container">
       <p>Tasks</p>
       <ul class="todo-list">
