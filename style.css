@@ -1,9 +1,9 @@
 .animate__animated.animate__rotateInUpRight {
-  --animate-duration: 2s;
+  --animate-duration: 3s;
 }
 
 body {
-  height: 100vh;
+  height: 100%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -106,8 +106,9 @@ header p {
 }
 
 footer {
+  position: absolute;
+  bottom: 0;
   display: flex;
-  align-items: flex-end;
   justify-content: center;
   margin-top: 5em;
   margin-bottom: 0;
